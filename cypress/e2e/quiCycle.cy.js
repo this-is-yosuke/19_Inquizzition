@@ -1,7 +1,7 @@
 describe("Quiz Cycle", () => {
     beforeEach(() => {
         // Visit the quiz page
-      cy.visit("http://localhost:3001"); 
+      cy.visit("http://localhost:3001");
       cy.intercept("GET", "/api/questions/random").as("getQuestions");
     });
   
